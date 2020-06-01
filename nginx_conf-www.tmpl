@@ -1,0 +1,8 @@
+...
+server {
+    server_name SERVER_NAME;
+    return 301 http://www.SERVER_NAME$request_uri;
+}
+server {
+    server_name www.SERVER_NAME;
+...

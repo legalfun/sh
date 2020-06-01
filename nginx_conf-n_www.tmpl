@@ -1,0 +1,9 @@
+upstream jm_live_X_RAND {
+    server 65.***.***.88;
+}
+...
+server {
+    server_name www.SERVER_NAME;
+    return 301 http://SERVER_NAME$request_uri;
+...
+}
